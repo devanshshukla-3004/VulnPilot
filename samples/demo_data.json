@@ -1,0 +1,12 @@
+{
+  "assets": [
+    {"asset_key":"ASSET-WEB-01","hostname":"web-demo-01","environment":"production","criticality":"critical","internet_exposed":true},
+    {"asset_key":"ASSET-DB-01","hostname":"db-demo-01","environment":"production","criticality":"high","internet_exposed":false},
+    {"asset_key":"ASSET-DEV-01","hostname":"dev-demo-01","environment":"development","criticality":"low","internet_exposed":false}
+  ],
+  "vulnerabilities": [
+    {"finding_key":"FIND-0001","asset_key":"ASSET-WEB-01","cve_id":"CVE-2024-0001","title":"Demo remote code execution exposure","cvss":9.8,"exploit_available":true,"status":"open","description":"Synthetic example only; not a real assessment."},
+    {"finding_key":"FIND-0002","asset_key":"ASSET-DB-01","cve_id":"CVE-2024-0002","title":"Demo database component vulnerability","cvss":7.5,"exploit_available":false,"status":"open","description":"Synthetic example only; validate against vendor advisories."},
+    {"finding_key":"FIND-0003","asset_key":"ASSET-DEV-01","cve_id":null,"title":"Demo outdated development dependency","cvss":5.3,"exploit_available":false,"status":"in_progress","description":"Synthetic example only; no actual host was scanned."}
+  ]
+}
